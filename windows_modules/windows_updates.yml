@@ -1,12 +1,13 @@
-  hosts: "all"
+---
+- hosts: "all"
   tasks:
     - name: "Run Updates on Win Servers then wait 5 mins"
       win_updates:
         category_names:
-            - Application
-            - CriticalUpdates
-            - DefinitionUpdates
-            - SecurityUpdates
-            - Updates
+          - Application
+          - CriticalUpdates
+          - DefinitionUpdates
+          - SecurityUpdates
+          - Updates
         reboot: yes
         reboot_timeout: 300
