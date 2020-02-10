@@ -1,0 +1,15 @@
+- name: Run Updates on Win Servers then wait 5 mins
+  hosts: All
+  connection: winrm
+
+  tasks:
+    win_updates:
+      category_names:
+        - Application
+        - CriticalUpdates
+        - DefinitionUpdates
+        - SecurityUpdates
+        - Updates
+
+    reboot: yes
+    reboot_timeout: 300
