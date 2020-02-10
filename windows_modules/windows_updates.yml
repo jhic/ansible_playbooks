@@ -1,7 +1,5 @@
 - name: Run Updates on Win Servers then wait 5 mins
-  hosts: All
-  connection: winrm
-
+  hosts: all
   tasks:
     win_updates:
       category_names:
