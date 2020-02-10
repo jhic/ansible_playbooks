@@ -1,0 +1,7 @@
+- name: Install Our Web Server
+  yum:
+    name:
+      - nginx
+      - postgresql
+      - postgresql-server
+    state: present
