@@ -1,4 +1,6 @@
-- name: upgrade all packages
-  dnf:
+--- 
+- 
+  dnf: 
     name: "*"
     state: latest
+  name: "upgrade all packages"
