@@ -1,5 +1,5 @@
-- name: Install Our Web Server
-  hosts: all
+---
+- hosts: "all"
   yum:
     name:
       - nginx
