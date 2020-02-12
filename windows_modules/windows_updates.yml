@@ -10,4 +10,4 @@
           - SecurityUpdates
           - Updates
         reboot: yes
-        reboot_timeout: 300
+        reboot_timeout: 1000
