@@ -1,6 +1,6 @@
---- 
-- 
-  dnf: 
+- name: upgrade all packages
+  hosts: all
+  dnf:
     name: "*"
     state: latest
-  name: "upgrade all packages"
+    update_cache: yes
