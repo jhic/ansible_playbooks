@@ -1,6 +1,8 @@
-- name: upgrade all packages
-  hosts: all
-  dnf:
-    name: "*"
-    state: latest
-    update_cache: yes
+---
+- hosts: "all"
+  tasks:
+    - name: "upgrade all packages"
+      dnf:
+        name: "*"
+        state: latest
+        update_cache: yes
